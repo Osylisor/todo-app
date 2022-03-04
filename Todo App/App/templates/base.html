@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'styles.css')}}">
+    <title>
+
+        {%block title%}
+
+        {% endblock %}
+
+    </title>
+</head>
+<body>
+
+    <!---Display flashed messges-->
+    {% with messages =  get_flashed_messages(with_categories = true) %}
+
+        {% if messages %}
+
+            {% for cat , msg in messages %}
+
+                {% if cat == 'error' %}
+                    <div class="alert-error">
+
+                        <span class = "close-btn" onclick="this.parentElement.style.display = 'none'; ">
+                            &times;
+                        </span>
+
+                        {{ msg }}
+                    </div>
+
+                {% elif cat == 'success' %}
+
+                    <div class="alert-success">
+
+                        {{ msg }}
+
+                        <span class = "close-btn" onclick="this.parentElement.style.display = 'none'; ">
+                            &times;
+                        </span>
+
+                        
+                    </div>
+
+
+                {% endif %}
+           
+
+            {% endfor %}
+
+
+        {% endif %}
+
+
+    {% endwith %}
+
+
+
+    {%block Content%}
+
+    {% endblock %}
+    
+</body>
+</html>

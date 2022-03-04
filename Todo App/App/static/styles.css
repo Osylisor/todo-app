@@ -1,0 +1,235 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(48, 49, 48);
+    color: white;
+}
+
+.navbar{
+    background-color: gray;
+    padding: 20px;
+    height: 50px;
+    display: flex;
+ 
+}
+
+.navbar a{
+   
+    box-sizing: border-box;
+    width: 100px;
+    padding: 20px;
+    height: 100%;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color:white;
+    background-color: rgb(255, 30, 0);
+    border-radius: 5px;
+    transition: 0.3s;
+    
+}
+
+.navbar a:hover{
+   
+    background-color: rgb(245, 135, 120);
+    
+}
+
+.container{
+
+    display: flex;
+    justify-content: center;
+ 
+}
+
+.form-group{
+
+    border-radius: 3px;
+    border: 1px, solid, rgb(251, 251, 251);
+    padding: 20px;
+    width: 500px;
+  
+   
+}
+
+
+.form-group-small{
+    
+    border-radius: 3px;
+    border: 1px, solid, rgb(251, 251, 251);
+    padding: 20px;
+    width: 500px;
+}
+
+.form-group input[type = "password"], .form-group input[type = "email"], .form-group input[type = "text"] {
+
+    padding: 14px 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    background-color: grey;
+    font-size: 1rem;
+}
+
+
+.form-group-small input[type ="text"]{
+    padding: 14px 20px;
+    margin-bottom: 20px;
+    width: 60%;
+    height: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    background-color: grey;
+    font-size: 1rem;
+}
+
+.form-group-small input[type = "submit"]{
+    padding: 12px;
+    border: none;
+    box-sizing: border-box;
+    width: 100px;
+    height: 50px;
+    background-color: rgb(45, 245, 55);
+    color:rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group label{
+    color: rgb(255, 255, 255);
+    padding: 12px;
+    font-size: 1rem;
+    
+}
+
+.form-group input[type = "submit"]{
+    padding: 12px;
+    border: none;
+    box-sizing: border-box;
+    width: 40%;
+    height: 50px;
+    background-color: rgb(45, 245, 55);
+    color:rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+ 
+.form-group a{
+    color:white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 12px;
+}
+
+ 
+.form-group a:hover{
+    color:rgb(6, 240, 45);
+    text-decoration: underline;
+
+    
+}
+
+.alert-error{
+    padding: 20px;
+    background-color: rgb(255, 0, 0);
+    color:white;
+    /*margin-bottom: 15px;*/
+}
+
+.alert-success{
+    padding: 20px;
+    background-color: rgb(9, 255, 0);
+    color:white;
+    /*margin-bottom: 15px;*/
+}
+
+.close-btn{
+    
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float:right;
+    line-height: 20px;
+    
+}
+
+.close-btn:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.table-control{
+    border-collapse: collapse;
+    padding: 12px;
+}
+
+.table-control tr, 
+.table-control td{
+    padding: 20px;
+    margin: 1rem;
+    border-spacing: 1.2rem;
+    border-bottom: white 1px solid;
+    align-items: center;
+}
+
+ .link-item-success{
+
+
+    padding: 12px;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: rgb(9, 255, 0);
+    text-align: center;
+    text-decoration: none;
+    color:white;
+    transition: 0.5s;
+
+}
+
+.link-item-success:hover{
+    background-color: rgb(108, 246, 103);
+}
+
+
+.link-item-red{
+
+
+    padding: 12px;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: rgb(255, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    color:white;
+    transition: 0.5s;
+
+}
+
+.link-item-red:hover{
+
+
+    padding: 12px;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: rgb(250, 101, 101);
+    text-align: center;
+    text-decoration: none;
+    color:white;
+
+}

@@ -1,0 +1,38 @@
+{%  extends "base.html"%}
+
+
+{% block title %} Login {% endblock %}
+
+
+{% block Content %}
+
+
+    <h1 align = "center">Login</h1>
+
+    <div class = "container" >
+
+       
+
+        <form class="form-group" method="POST">
+
+            <label for="email" align = "left">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter email">
+            <br>
+
+            <label for="password" align = "left">Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter password">
+            <br>
+
+            <input type="submit" value="Login" align = "left">
+            <a href="/sign_up" align = "center">No Acoount? Click here to sign up</a>
+           
+
+        </form>
+
+    </div>
+
+    
+ 
+   
+
+{% endblock %}

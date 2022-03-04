@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title%}Edit Task{% endblock %}
+
+{% block Content %}
+
+<h1  align = "center"> Update Todo Task</h1>
+
+<div class = 'container'>
+    <form class="form-group-small" method="post" align = "center">
+        <input type="text" name="todo" id="todo" value = "{{ task.data }}">
+        <input type="submit" value="Edit">
+    </form>
+</div>
+
+
+
+{%  endblock %}

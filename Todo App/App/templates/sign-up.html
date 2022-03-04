@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+
+{% block title %}Sign Up {% endblock %}
+
+
+{% block Content %}
+
+
+<h1 align = "center">Sign Up</h1>
+
+<div class = "container" >
+
+   
+
+    <form class="form-group" method="POST">
+
+
+        
+        <label for="name" align = "left">Username</label>
+        <input type="text" name="name" id="name" placeholder="Enter Username">
+        <br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter email">
+        <br>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Enter password">
+        <br>
+
+        <label for="password-comfirm">Password(Comfirm)</label>
+        <input type="password" name="password-comfirm" id="password-comfirm" placeholder="Enter password">
+        <br>
+
+
+        <input type="submit" value="Create Account">
+
+    </form>
+
+</div>
+
+{% endblock %}

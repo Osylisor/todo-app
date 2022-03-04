@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block Content %}
+
+    <div class = 'navbar' align = "center">
+        <a href = "{{ url_for('auth.logout') }}">Log out</a>
+    </div>
+
+    <h1  align = "center"> Todo App</h1>
+
+    <div class = 'container'>
+        <form class="form-group-small" method="post" align = "center">
+            <input type="text" name="todo" id="todo">
+            <input type="submit" value="Add">
+        </form>
+    </div>
+
+
+    <div class="container">
+        <table class ='table-control'>
+
+            {% for user in users.todos %}
+
+                <tr>
+                    <td>{{ user.data }}</td>
+                    <td>{{ user.date.date() }}</td>
+                    <td><a href="/edit/{{ user.id }}" class = "link-item-success">Edit</a></td>
+                    <td><a href="/delete/{{ user.id }}"class = "link-item-red">Remove</a></td>
+                </tr>
+ 
+            {% endfor %}
+
+
+        </table>
+    </div>
+
+{% endblock %}
